@@ -49,7 +49,7 @@ function task_project_init_cms($args)
 {
   $application = <<<EOD
 <?php
-lmb_require('limb/cms/src/lmbCmsApplication.class.php');
+lmb_require('limb-cms/core/src/lmbCmsApplication.class.php');
 
 class LimbApplication extends lmbCmsApplication
 {

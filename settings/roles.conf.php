@@ -1,5 +1,5 @@
 <?php
-lmb_require('limb/cms/src/model/lmbCmsUserRoles.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsUserRoles.class.php');
 
 $conf = array(
   lmbCmsUserRoles :: EDITOR  => array(

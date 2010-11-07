@@ -1,6 +1,6 @@
 <?php
 
-lmb_require('limb/cms/src/model/lmbCmsSeo.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsSeo.class.php');
 
 class lmbCmsSeoTest extends lmbCmsTestCase
 {

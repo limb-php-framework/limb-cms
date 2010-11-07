@@ -9,8 +9,8 @@
  * @version    $Id$
  * @package    cms
  */
-lmb_require('limb/cms/src/controller/lmbAdminObjectController.class.php');
-lmb_require('limb/cms/src/model/lmbCmsDocument.class.php');
+lmb_require('limb-cms/core/src/controller/lmbAdminObjectController.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsDocument.class.php');
 
 class AdminDocumentController extends lmbAdminObjectController
 {

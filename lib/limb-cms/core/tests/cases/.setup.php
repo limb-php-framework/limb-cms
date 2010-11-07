@@ -10,4 +10,4 @@ lmb_tests_init_db_dsn();
 lmb_tests_setup_db(dirname(__FILE__) . '/../../init/db.');
 lmb_tests_setup_db(dirname(__FILE__) . '/../fixture/init_tests.');
 
-lmb_require('limb/cms/tests/cases/lmbCmsTestCase.class.php');
+lmb_require('limb-cms/core/tests/cases/lmbCmsTestCase.class.php');

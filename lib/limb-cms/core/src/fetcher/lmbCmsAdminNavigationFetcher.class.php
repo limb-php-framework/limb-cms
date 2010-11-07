@@ -1,7 +1,7 @@
 <?php
 lmb_require('limb/core/src/lmbCollection.class.php');
 lmb_require('limb/web_app/src/fetcher/lmbFetcher.class.php');
-lmb_require('limb/cms/src/exception/lmbCmsException.class.php');
+lmb_require('limb-cms/core/src/exception/lmbCmsException.class.php');
 
 class lmbCmsAdminNavigationFetcher extends lmbFetcher
 {

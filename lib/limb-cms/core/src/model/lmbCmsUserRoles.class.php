@@ -7,7 +7,7 @@
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
 
-lmb_require('limb/cms/src/model/lmbCmsUserRole.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsUserRole.class.php');
 /**
  * class lmbCmsUserRoles.
  *

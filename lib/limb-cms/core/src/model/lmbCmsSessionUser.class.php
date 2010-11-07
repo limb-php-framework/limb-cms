@@ -8,7 +8,7 @@
  */
 lmb_require('limb/core/src/lmbObject.class.php');
 lmb_require('limb/active_record/src/lmbActiveRecord.class.php');
-lmb_require('limb/cms/src/model/lmbCmsUser.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsUser.class.php');
 
 /**
  * class lmbCmsClassName.

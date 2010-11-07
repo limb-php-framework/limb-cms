@@ -12,7 +12,7 @@
  * @version $Id: toolkit.inc.php 6598 2007-12-07 08:01:45Z pachanga $
  */
 lmb_require('limb/toolkit/src/lmbToolkit.class.php');
-lmb_require('limb/cms/src/toolkit/lmbCmsTools.class.php');
+lmb_require('limb-cms/core/src/toolkit/lmbCmsTools.class.php');
 lmbToolkit :: merge(new lmbCmsTools());
 
 

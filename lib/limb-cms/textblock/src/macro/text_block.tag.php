@@ -1,6 +1,6 @@
 <?php
 lmb_require('limb/macro/src/compiler/lmbMacroTag.class.php');
-lmb_require('limb/cms/src/model/lmbCmsTextBlock.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsTextBlock.class.php');
 /**
  * class TextBlock.
  * @tag text_block

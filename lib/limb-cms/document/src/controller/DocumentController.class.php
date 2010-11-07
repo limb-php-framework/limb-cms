@@ -1,7 +1,7 @@
 <?php
-lmb_require('limb/cms/src/controller/lmbObjectController.class.php');
-lmb_require('limb/cms/src/model/lmbCmsDocument.class.php');
-lmb_require('limb/cms/src/model/Seo.class.php');
+lmb_require('limb-cms/core/src/controller/lmbObjectController.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsDocument.class.php');
+lmb_require('limb-cms/core/src/model/Seo.class.php');
 
 class DocumentController extends lmbObjectController
 {

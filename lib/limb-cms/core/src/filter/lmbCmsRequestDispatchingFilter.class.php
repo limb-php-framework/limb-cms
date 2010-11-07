@@ -8,7 +8,7 @@
  */
 lmb_require('limb/web_app/src/filter/lmbRequestDispatchingFilter.class.php');
 lmb_require('limb/web_app/src/request/lmbCompositeRequestDispatcher.class.php');
-lmb_require('limb/cms/src/request/lmbCmsDocumentRequestDispatcher.class.php');
+lmb_require('limb-cms/document/src/request/lmbCmsDocumentRequestDispatcher.class.php');
 lmb_require('limb/web_app/src/request/lmbRoutesRequestDispatcher.class.php');
 
 /**

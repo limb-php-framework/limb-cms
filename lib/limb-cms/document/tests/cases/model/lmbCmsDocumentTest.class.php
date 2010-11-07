@@ -6,8 +6,8 @@
  * @copyright  Copyright &copy; 2004-2007 BIT(http://bit-creative.com)
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
-lmb_require('limb/cms/src/model/lmbCmsDocument.class.php');
-lmb_require('limb/cms/tests/cases/lmbCmsTestCase.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsDocument.class.php');
+lmb_require('limb-cms/core/tests/cases/lmbCmsTestCase.class.php');
 
 class lmbCmsDocumentTest extends lmbCmsTestCase
 {

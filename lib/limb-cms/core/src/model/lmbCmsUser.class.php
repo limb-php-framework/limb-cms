@@ -14,7 +14,7 @@
  * @version $Id$
  */
 
-lmb_require("limb/cms/src/model/lmbCmsUserRoles.class.php");
+lmb_require("limb-cms/core/src/model/lmbCmsUserRoles.class.php");
 
 class lmbCmsUser extends lmbActiveRecord
 {
@@ -34,7 +34,7 @@ class lmbCmsUser extends lmbActiveRecord
     $validator->addRequiredRule('login', 'Поле "Логин" обязательно для заполнения');
     $validator->addRequiredRule('email', 'Поле "E-mail" обязательно для заполнения');
 
-    lmb_require('limb/cms/src/validation/rule/lmbCmsUserUniqueFieldRule.class.php');
+    lmb_require('limb-cms/core/src/validation/rule/lmbCmsUserUniqueFieldRule.class.php');
     $validator->addRule(new lmbCmsUserUniqueFieldRule('login', $this));
     $validator->addRule(new lmbCmsUserUniqueFieldRule('email', $this));
 

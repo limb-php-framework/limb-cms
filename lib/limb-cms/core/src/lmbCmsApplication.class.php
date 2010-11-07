@@ -5,12 +5,12 @@ class lmbCmsApplication extends lmbWebApplication
 {
 	function __construct()
 	{
-		$this->addPreActionFilter(new lmbHandle('limb/cms/src/filter/lmbCmsAccessPolicyFilter'));
+		$this->addPreActionFilter(new lmbHandle('limb-cms/core/src/filter/lmbCmsAccessPolicyFilter'));
 	}
 
   protected function _getRequestDispathingFilter()
   {
-    return new lmbHandle('limb/cms/src/filter/lmbCmsRequestDispatchingFilter');
+    return new lmbHandle('limb-cms/core/src/filter/lmbCmsRequestDispatchingFilter');
   }
 }
 

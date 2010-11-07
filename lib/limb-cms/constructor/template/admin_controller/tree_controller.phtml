@@ -1,4 +1,4 @@
-lmb_require('limb/cms/src/controller/lmbAdminObjectController.class.php');
+lmb_require('limb-cms/core/src/controller/lmbAdminObjectController.class.php');
 lmb_require('src/model/{$#model_name}.class.php');
 
 class Admin{$#model_name}Controller extends lmbAdminObjectController
@@ -42,7 +42,7 @@ class Admin{$#model_name}Controller extends lmbAdminObjectController
     if(!$this->request->hasPost())
       return;
 
-    lmb_require('limb/cms/src/validation/rule/lmbTreeUniqueIdentifierRule.class.php');
+    lmb_require('limb-cms/core/src/validation/rule/lmbTreeUniqueIdentifierRule.class.php');
 
     $parent_id = $this->request->getInteger('choose_parent');
 
@@ -104,7 +104,7 @@ class Admin{$#model_name}Controller extends lmbAdminObjectController
     if(!$parent_id = $this->request->get('choose_parent'))
       return;
 
-    lmb_require('limb/cms/src/validation/rule/lmbTreeUniqueIdentifierRule.class.php');
+    lmb_require('limb-cms/core/src/validation/rule/lmbTreeUniqueIdentifierRule.class.php');
 
     $rule = new lmbTreeUniqueIdentifierRule("identifier", $this->item, 'Элемент сo значением поля "Идентификатор" "' . $this->item->getIdentifier() . '" уже существует', $parent_id);
     $rule->validate($this->item, $this->error_list);

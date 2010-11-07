@@ -7,7 +7,7 @@ class lmbCmsSeo extends lmbActiveRecord
   
   protected function _createValidator()
   {
-    lmb_require('limb/cms/src/validation/rule/lmbCmsUniqueFieldRule.class.php');
+    lmb_require('limb-cms/core/src/validation/rule/lmbCmsUniqueFieldRule.class.php');
     
     $validator = new lmbValidator();
 

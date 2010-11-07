@@ -7,7 +7,7 @@
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
 lmb_require('limb/dbal/src/lmbSimpleDb.class.php');
-lmb_require('limb/cms/src/model/lmbCmsDocument.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsDocument.class.php');
 
 class lmbCmsTestCase extends UnitTestCase
 {

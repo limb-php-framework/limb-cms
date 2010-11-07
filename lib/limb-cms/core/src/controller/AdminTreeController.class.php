@@ -1,6 +1,6 @@
 <?php
 lmb_require('limb/web_app/src/controller/lmbController.class.php');
-lmb_require('limb/cms/src/lmbCmsTreeBrowser.class.php');
+lmb_require('limb-cms/core/src/lmbCmsTreeBrowser.class.php');
 
 class AdminTreeController extends lmbController
 {

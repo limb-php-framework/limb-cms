@@ -14,6 +14,6 @@ require_once('limb/core/common.inc.php');
 lmb_package_require('config');
 lmb_package_require('macro');
 
-lmb_require('limb/wysiwyg/toolkit.inc.php');
+lmb_require('limb-cms/wysiwyg/toolkit.inc.php');
 
 lmb_package_register('wysiwyg', dirname(__FILE__));

@@ -8,7 +8,7 @@
  */
 lmb_require('limb/toolkit/src/lmbAbstractTools.class.php');
 lmb_require('limb/tree/src/lmbMPTree.class.php');
-lmb_require('limb/cms/src/model/lmbCmsSessionUser.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsSessionUser.class.php');
 
 /**
  * class lmbCmsTools.

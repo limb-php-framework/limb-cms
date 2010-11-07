@@ -1,7 +1,7 @@
 <?php
 lmb_require('limb/web_app/src/controller/lmbController.class.php');
 lmb_require('limb/mail/src/lmbMailer.class.php');
-lmb_require('limb/cms/src/model/lmbCmsUser.class.php');
+lmb_require('limb-cms/core/src/model/lmbCmsUser.class.php');
 lmb_require('limb/view/src/lmbMacroView.class.php');
 
 class CmsUserController extends lmbController

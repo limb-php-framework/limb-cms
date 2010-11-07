@@ -3,17 +3,16 @@
  * Limb PHP Framework
  *
  * @link http://limb-project.com
- * @copyright  Copyright &copy; 2004-2007 BIT(http://bit-creative.com)
+ * @copyright  Copyright &copy; 2004-2012 BIT(http://bit-creative.com)
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
 
-lmb_require('limb/cms/src/model/lmbActiveRecordTreeNode.class.php');
+lmb_require('limb-cms/core/src/model/lmbActiveRecordTreeNode.class.php');
 
 /**
  * class lmbCmsDocument.
  *
- * @package cms
- * @version $Id$
+ * @package cms-document
  */
 class lmbCmsDocument extends lmbActiveRecordTreeNode
 {
@@ -33,7 +32,7 @@ class lmbCmsDocument extends lmbActiveRecordTreeNode
     $validator->addRequiredRule('content', 'Поле "Текст" обязательно для заполнения');
     $validator->addRequiredRule('identifier', 'Поле "Идентификатор" обязательно для заполнения');
 
-    lmb_require('limb/cms/src/validation/rule/lmbTreeIdentifierRule.class.php');
+    lmb_require('limb-cms/core/src/validation/rule/lmbTreeIdentifierRule.class.php');
     $validator->addRule(new lmbTreeIdentifierRule('identifier'));
 
     return $validator;

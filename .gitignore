@@ -9,3 +9,4 @@ lib/limb
 www/shared
 var/logs
 var/i18n-qt
+var/cache/macro
