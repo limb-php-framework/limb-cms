@@ -13,27 +13,27 @@ class lmbWysiwygConfigurationHelper
   protected $_wysiwyg_types = array(
     'ckeditor' => array(
       'macro' => array(
-        'file' => 'limb/wysiwyg/src/macro/lmbMacroCKEditorWidget.class.php',
+        'file' => 'limb-cms/wysiwyg/src/macro/lmbMacroCKEditorWidget.class.php',
         'class' => 'lmbMacroCKEditorWidget'
       )
     ),
     'fckeditor' => array(
       'macro' => array(
-        'file' => 'limb/wysiwyg/src/macro/lmbMacroFCKEditorWidget.class.php',
+        'file' => 'limb-cms/wysiwyg/src/macro/lmbMacroFCKEditorWidget.class.php',
         'class' => 'lmbMacroFCKEditorWidget'
       ),
       'wact' => array(
-        'file' => 'limb/wysiwyg/src/wact/lmbFCKEditorComponent.class.php',
+        'file' => 'limb-cms/wysiwyg/src/wact/lmbFCKEditorComponent.class.php',
         'class' => 'lmbFCKEditorComponent'
       ),
     ),
     'tinymce' => array(
       'macro' => array(
-        'file' => 'limb/wysiwyg/src/macro/lmbMacroTinyMCEWidget.class.php',
+        'file' => 'limb-cms/wysiwyg/src/macro/lmbMacroTinyMCEWidget.class.php',
         'class' => 'lmbMacroTinyMCEWidget'
       ),
       'wact' => array(
-        'file' => 'limb/wysiwyg/src/wact/lmbTinyMCEComponent.class.php',
+        'file' => 'limb-cms/wysiwyg/src/wact/lmbTinyMCEComponent.class.php',
         'class' => 'lmbTinyMCEComponent'
       )
     ),

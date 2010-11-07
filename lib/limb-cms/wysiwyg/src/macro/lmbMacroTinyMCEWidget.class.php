@@ -7,7 +7,7 @@
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
 
-lmb_require('limb/wysiwyg/src/macro/lmbMacroBaseWysiwygWidget.class.php');
+lmb_require('limb-cms/wysiwyg/src/macro/lmbMacroBaseWysiwygWidget.class.php');
 
 /**
  * @package wysiwyg

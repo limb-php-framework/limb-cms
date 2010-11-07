@@ -1,6 +1,6 @@
 <?php
 lmb_require('limb-cms/core/src/controller/lmbAdminObjectController.class.php');
-lmb_require('limb-cms/core/src/model/lmbCmsTextBlock.class.php');
+lmb_require('limb-cms/textblock/src/model/lmbCmsTextBlock.class.php');
 
 class AdminTextBlockController extends lmbAdminObjectController
 {

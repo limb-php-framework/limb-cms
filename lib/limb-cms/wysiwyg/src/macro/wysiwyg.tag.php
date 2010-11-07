@@ -8,7 +8,7 @@
  */
 
 lmb_require('limb/macro/src/tags/form/textarea.tag.php');
-lmb_require('limb/wysiwyg/src/lmbWysiwygConfigurationHelper.class.php');
+lmb_require('limb-cms/wysiwyg/src/lmbWysiwygConfigurationHelper.class.php');
 
 /**
  * Macro wysiwyg tag

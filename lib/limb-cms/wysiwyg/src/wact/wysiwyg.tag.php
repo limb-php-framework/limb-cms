@@ -7,7 +7,7 @@
  * @license    LGPL http://www.gnu.org/copyleft/lesser.html
  */
 require_once('limb/wact/src/tags/form/control.inc.php');
-lmb_require('limb/wysiwyg/src/lmbWysiwygConfigurationHelper.class.php');
+lmb_require('limb-cms/wysiwyg/src/lmbWysiwygConfigurationHelper.class.php');
 define('LIMB_WYSIWYG_DIR', dirname(__FILE__) . '/../../../');
 
 /**
@@ -18,7 +18,7 @@ define('LIMB_WYSIWYG_DIR', dirname(__FILE__) . '/../../../');
 class lmbWysiwygTag extends WactControlTag
 {
   var $runtimeComponentName = 'lmbWysiwygComponent';
-  var $runtimeIncludeFile = 'limb/wysiwyg/src/wact/lmbWysiwygComponent.class.php';
+  var $runtimeIncludeFile = 'limb-cms/wysiwyg/src/wact/lmbWysiwygComponent.class.php';
   
   /**
    * @var lmbWysiwygConfigurationHelper

@@ -12,7 +12,7 @@
  */
 require_once('limb/core/common.inc.php');
 
-lmb_env_setor('LIMB_CONTROLLERS_INCLUDE_PATH', 'src/controller;limb-cms/core/src/controller;limb/web_app/src/controller');
+lmb_env_setor('LIMB_CONTROLLERS_INCLUDE_PATH', 'src/controller;limb-cms/*/src/controller;limb/*/src/controller');
 
 lmb_package_require('web_app');
 lmb_require('limb-cms/core/toolkit.inc.php');
