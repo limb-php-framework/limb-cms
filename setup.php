@@ -25,7 +25,8 @@ lmb_app_mode(LIMB_APP_DEVELOPMENT);
 if(file_exists(dirname(__FILE__) . '/setup.override.php'))
   require_once(dirname(__FILE__) . '/setup.override.php');
 
-lmb_package_require('core', 'limb-cms/');
-lmb_package_require('web_app');
+lmb_package_require('core', 'limb-cms');
+
+lmb_cms_load_packages('limb-cms');
 
 lmb_env_setor('LIMB_VAR_DIR', dirname(__FILE__) . '/var/');

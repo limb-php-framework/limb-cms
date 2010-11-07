@@ -8,8 +8,7 @@
  */
 
 /**
- * @package cms
- * @version $Id: common.inc.php 8048 2010-01-19 22:12:02Z korchasa $
+ * @package cms-core
  */
 require_once('limb/core/common.inc.php');
 
@@ -23,3 +22,21 @@ lmb_env_setor('JQUERY_FILE_URL','/shared/js/js/jquery/v1.2.3.js');
 lmb_env_setor('CMS_STATIC_FILES_VERSION', '2');
 
 lmb_package_register('cms', dirname(__FILE__));
+
+function lmb_cms_load_packages($packages_dir)
+{  
+  $cms_packages = lmb_glob($packages_dir.'/*');
+  foreach ($cms_packages as $cms_package)
+  {
+    lmb_env_set('LIMB_CMS_PACKAGES_DIR', realpath(dirname($cms_package)));
+    if(is_dir($cms_package))
+      lmb_package_require(basename($cms_package), $packages_dir);
+  }
+}
+
+function lmb_cms_get_loaded_packages()
+{
+  if(!lmb_env_has('LIMB_CMS_PACKAGES_DIR'))
+    throw new lmbCmsException('Packages not inited. Use lmb_cms_load_packages().');
+  return array_keys(lmb_packages_list(lmb_env_get('LIMB_CMS_PACKAGES_DIR')));
+}
