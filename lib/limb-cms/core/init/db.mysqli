@@ -1,0 +1,41 @@
+DROP TABLE IF EXISTS `lmb_cms_user`;
+CREATE TABLE  `lmb_cms_user` (
+  `id` int(11) NOT NULL auto_increment,
+  `email` varchar(255) default NULL,
+  `name` varchar(255) default NULL,
+  `hashed_password` varchar(64) default NULL,
+  `generated_password` varchar(64) default NULL,
+  `login` varchar(50) default NULL,
+  `role_type` varchar(10) NOT NULL default '0',
+  `ctime` int(11) NOT NULL default 0,
+  PRIMARY KEY  (`id`),
+  KEY `login` (`login`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `lmb_cms_user` VALUES(
+  NULL,
+  'support@limb-project.com',
+  'Admin',
+  'b9fb54d1cf88c8c9141cdb01215969221899ff97', /* secret */
+  NULL,
+  'admin',
+  'admin',
+  1
+);
+
+DROP TABLE IF EXISTS `lmb_cms_seo`;
+CREATE TABLE `lmb_cms_seo` (
+  `id` int(11) unsigned NOT NULL auto_increment,
+  `url` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `title` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `description` text collate utf8_unicode_ci NOT NULL,
+  `keywords` text collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+INSERT INTO `lmb_cms_seo` (`id`, `url`, `title`, `description`, `keywords`) VALUES(
+  1,
+  '/',
+  'Главная страница Сайта',
+  'Описание',
+  'Ключевые слова'
+);
+

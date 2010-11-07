@@ -5,3 +5,7 @@
 .buildpath
 .project
 .settings
+lib/limb
+www/shared
+var/logs
+var/i18n-qt

@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `lmb_cms_text_block`;
+CREATE TABLE  `lmb_cms_text_block` (
+  `id` int(11) NOT NULL auto_increment,
+  `identifier` varchar(255) default NULL,
+  `title` varchar(255) default NULL,
+  `content` longtext,
+  PRIMARY KEY  (`id`),
+  KEY `identifier` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

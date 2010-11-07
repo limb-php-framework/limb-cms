@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS "lmb_cms_text_block";
+CREATE TABLE  "lmb_cms_text_block" (
+  "id" INTEGER PRIMARY KEY,
+  "identifier" varchar(255) default NULL,
+  "title" varchar(255) default NULL,
+  "content" longtext
+);
+CREATE INDEX "identifier" ON "lmb_cms_text_block" ("identifier");
