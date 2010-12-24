@@ -1,12 +1,21 @@
+# Different IDE files
 .idea
-*override.php
-*~*
-*conflicted*
+nbproject
 .buildpath
 .project
 .settings
+
+# Conflicts
+*~*
+*conflicted*
+
+# CMS
 lib/limb
 www/shared
-var/logs
-var/i18n-qt
-var/cache/macro
+var/*
+
+# Overrides in current installation
+*override.php
+
+
+
